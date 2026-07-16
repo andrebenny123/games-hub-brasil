@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,140 +7,189 @@
 <title>Games HUB Brasil</title>
 
 <style>
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0b0b16;
-    color: white;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-header {
-    background: linear-gradient(135deg,#1111ff,#8a00ff);
-    padding: 40px 20px;
-    text-align: center;
+body{
+    background:#0b0b16;
+    color:white;
 }
 
-.logo {
-    font-size: 45px;
-    font-weight: bold;
+header{
+    background:#111827;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border-bottom:3px solid #00b7ff;
 }
 
-.logo span {
-    color: #00ff99;
+.logo{
+    font-size:32px;
+    font-weight:bold;
+    color:#00b7ff;
 }
 
-header p {
-    font-size: 18px;
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    transition:.3s;
 }
 
-nav {
-    background: #050505;
-    padding: 15px;
-    text-align: center;
+nav a:hover{
+    color:#00b7ff;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 10px;
-    font-weight: bold;
+.hero{
+    height:420px;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url("IMG_0118.jpeg") center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
 }
 
-section {
-    padding: 20px;
+.hero h1{
+    font-size:50px;
 }
 
-h2 {
-    color: #00ff99;
+.hero p{
+    margin-top:15px;
+    font-size:20px;
+    color:#ddd;
 }
 
-.card {
-    background: #17172b;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 15px;
-    box-shadow: 0 0 15px #000;
+.btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 35px;
+    background:#00b7ff;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
 }
 
-button {
-    background: #00ff99;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: bold;
+section{
+    width:90%;
+    margin:50px auto;
 }
 
-footer {
-    background: #050505;
-    text-align: center;
-    padding: 20px;
-    margin-top: 30px;
+section h2{
+    color:#00b7ff;
+    margin-bottom:20px;
 }
 
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#161b22;
+    border-radius:12px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 20px;
+    color:#bbb;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#111827;
+    margin-top:50px;
+}
 </style>
 
 </head>
-
 <body>
 
 <header>
+<div class="logo">🎮 Games HUB Brasil</div>
 
-    <img src="IMG_0118.jpeg" alt="Games HUB Brasil" style="width:100%;">
-🎮 Games <span>HUB</span> Brasil
-</div>
-
-<p>O portal gamer brasileiro com novidades do mundo todo</p>
+<nav>
+<a href="#">Início</a>
+<a href="#">Notícias</a>
+<a href="#">Reviews</a>
+<a href="#">PC</a>
+<a href="#">Mobile</a>
+<a href="#">Console</a>
+</nav>
 
 </header>
 
+<div class="hero">
 
-<nav>
+<div>
 
-<a href="#">Início</a>
-<a href="#">Notícias</a>
-<a href="#">Jogos</a>
-<a href="#">Mobile</a>
-<a href="#">Eventos</a>
+<h1>Bem-vindo ao Games HUB Brasil</h1>
 
-</nav>
+<p>As últimas notícias, reviews e lançamentos do mundo dos games.</p>
 
+<a class="btn" href="#">Explorar</a>
+
+</div>
+
+</div>
 
 <section>
 
 <h2>🔥 Destaques</h2>
 
-<div class="card">
-<h3>🎮 Lançamentos</h3>
-<p>Confira os jogos mais aguardados do momento.</p>
-<button>Ver jogos</button>
-</div>
-
+<div class="cards">
 
 <div class="card">
-<h3>🏆 Campeonatos</h3>
-<p>Fique ligado nos torneios e competições gamers.</p>
-<button>Participar</button>
+<img src="IMG_0118.jpeg">
+<h3>Os jogos mais esperados de 2026</h3>
+<p>Confira os lançamentos que prometem dominar o mercado este ano.</p>
 </div>
-
 
 <div class="card">
-<h3>📱 Games Mobile</h3>
-<p>Os melhores jogos para Android e iPhone.</p>
-<button>Explorar</button>
+<img src="IMG_0118.jpeg">
+<h3>Review completo</h3>
+<p>Veja nossa análise dos principais títulos do momento.</p>
 </div>
 
+<div class="card">
+<img src="IMG_0118.jpeg">
+<h3>Promoções</h3>
+<p>As melhores ofertas em Steam, PlayStation e Xbox.</p>
+</div>
+
+</div>
 
 </section>
 
-
 <footer>
 
-<p>© 2026 Games HUB Brasil - Todos os direitos reservados</p>
+© 2026 Games HUB Brasil - Todos os direitos reservados.
 
 </footer>
 
-
 </body>
-
 </html>
