@@ -8,52 +8,77 @@
 <title>Games HUB Brasil</title>
 
 <style>
+
 body {
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: white;
     margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b0b16;
+    color: white;
 }
 
 header {
-    background: #1a1a1a;
-    padding: 30px;
+    background: linear-gradient(135deg,#1111ff,#8a00ff);
+    padding: 40px 20px;
     text-align: center;
 }
 
-h1 {
-    color: #00ff88;
-    font-size: 40px;
+.logo {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #00ff99;
+}
+
+header p {
+    font-size: 18px;
 }
 
 nav {
-    background: #000;
+    background: #050505;
     padding: 15px;
     text-align: center;
 }
 
 nav a {
     color: white;
-    margin: 10px;
     text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
 }
 
 section {
     padding: 20px;
 }
 
+h2 {
+    color: #00ff99;
+}
+
 .card {
-    background: #222;
+    background: #17172b;
     padding: 20px;
-    margin: 15px 0;
-    border-radius: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #000;
+}
+
+button {
+    background: #00ff99;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
 }
 
 footer {
-    background: #000;
+    background: #050505;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+    margin-top: 30px;
 }
+
 </style>
 
 </head>
@@ -61,39 +86,61 @@ footer {
 <body>
 
 <header>
-<h1>🎮 Games HUB Brasil</h1>
-<p>O universo dos games em um só lugar</p>
+
+<div class="logo">
+🎮 Games <span>HUB</span> Brasil
+</div>
+
+<p>O portal gamer brasileiro com novidades do mundo todo</p>
+
 </header>
 
+
 <nav>
+
+<a href="#">Início</a>
 <a href="#">Notícias</a>
 <a href="#">Jogos</a>
-<a href="#">Análises</a>
 <a href="#">Mobile</a>
+<a href="#">Eventos</a>
+
 </nav>
+
 
 <section>
 
-<div class="card">
-<h2>🔥 Últimas novidades</h2>
-<p>Confira lançamentos, atualizações e tudo sobre o mundo gamer.</p>
-</div>
+<h2>🔥 Destaques</h2>
 
 <div class="card">
-<h2>🎮 Jogos em destaque</h2>
-<p>PC • Console • Mobile</p>
+<h3>🎮 Lançamentos</h3>
+<p>Confira os jogos mais aguardados do momento.</p>
+<button>Ver jogos</button>
 </div>
 
+
 <div class="card">
-<h2>🏆 Campeonatos</h2>
-<p>Fique por dentro dos maiores torneios de games.</p>
+<h3>🏆 Campeonatos</h3>
+<p>Fique ligado nos torneios e competições gamers.</p>
+<button>Participar</button>
 </div>
+
+
+<div class="card">
+<h3>📱 Games Mobile</h3>
+<p>Os melhores jogos para Android e iPhone.</p>
+<button>Explorar</button>
+</div>
+
 
 </section>
 
+
 <footer>
-<p>© 2026 Games HUB Brasil</p>
+
+<p>© 2026 Games HUB Brasil - Todos os direitos reservados</p>
+
 </footer>
+
 
 </body>
 
